@@ -64,5 +64,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Yurts is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/yurts_stock/
+Yurts (Yurts AI / Yurts Technologies, Inc.) is a San Rafael, California generative-AI company founded in 2022 that rebranded to Legion Intelligence, Inc. in April 2025; yurts.ai now redirects to legionintel.com. Legion builds governed, agentic AI for national security — AI agents that search, chat, draft and automate work across the systems defense, intelligence, energy, aerospace, manufacturing and MRO teams already use, with human command, scoped permissions and full attribution on every agent action. It ships as Legion Packs (role-based capability bundles) and Centurion, a deployable edge system for DDIL environments, and runs in cloud, on-prem, air-gapped and classified environments from IL2 through IL6. The company states the platform connects to 100+ systems, supports the Model Context Protocol and offers REST API extensibility, but publishes no public developer portal, API reference or machine-readable contract — the interface surface is delivered inside a customer deployment.
+
+- Website: https://www.legionintel.com/
+- Secondary-market listing: https://forgeglobal.com/yurts_stock/
+- GitHub: https://github.com/YurtsAI

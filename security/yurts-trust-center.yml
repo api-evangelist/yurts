@@ -1,0 +1,73 @@
+generated: '2026-09-04'
+method: searched
+probe: true
+source: https://www.legionintel.com/security
+url: https://www.legionintel.com/security
+note: >-
+  Yurts rebranded to Legion Intelligence, Inc.; the security and compliance page is published on the
+  successor domain. A dedicated hosted trust center is provisioned at https://trust.legionintel.com/
+  and https://trust.yurts.ai/ — both CNAME to trust.cname.drata.com (Drata Trust Center), and both
+  answered our probe with a Cloudflare interstitial ("Just a moment...", HTTP 403) rather than the
+  page, so the certification list below is read from the first-party /security page and the
+  company's own llms.txt, not from the Drata portal.
+trust_centers:
+- url: https://trust.legionintel.com/
+  platform: Drata
+  evidence: DNS CNAME trust.legionintel.com -> trust.cname.drata.com
+  http_status: 403
+  http_status_note: Cloudflare bot challenge, not a dead page
+- url: https://trust.yurts.ai/
+  platform: Drata
+  evidence: DNS CNAME trust.yurts.ai -> trust.cname.drata.com
+  http_status: 403
+  http_status_note: legacy brand host, same Drata target
+certifications:
+- name: SOC 2 Type 2
+  evidence: https://www.legionintel.com/security
+- name: SOC 1 Type 2
+  evidence: https://www.legionintel.com/security
+- name: FedRAMP High
+  scope: cloud platform
+  evidence: https://www.legionintel.com/llms.txt
+- name: CMMC Level 2
+  evidence: https://www.legionintel.com/llms.txt
+- name: NIST 800-53
+  evidence: https://www.legionintel.com/llms.txt
+- name: HIPAA
+  kind: attestation
+  evidence: https://www.legionintel.com/security
+- name: GDPR
+  kind: attestation
+  evidence: https://www.legionintel.com/security
+- name: ITAR
+  kind: readiness
+  note: stated as "ready to manage ITAR-controlled data"
+  evidence: https://www.legionintel.com/llms.txt
+- name: DoD Impact Level IL2-IL6
+  kind: authorization range
+  evidence: https://www.legionintel.com/security
+supply_chain:
+- artifact: SBOM
+  evidence: https://www.legionintel.com/llms.txt
+- artifact: HBOM
+  evidence: https://www.legionintel.com/llms.txt
+evidence:
+- source: https://www.legionintel.com/security
+  http_status: 200
+  keywords:
+  - soc 1 type 2
+  - soc 2 type 2
+  - hipaa
+  - gdpr
+  - cmmc
+  - fedramp high
+  - il2-6
+- source: https://www.legionintel.com/llms.txt
+  http_status: 200
+  keywords:
+  - fedramp high
+  - nist 800-53
+  - soc 2 type ii
+  - cmmc level 2
+  - itar
+  - hbom/sbom

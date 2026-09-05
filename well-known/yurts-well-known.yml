@@ -1,0 +1,231 @@
+generated: '2026-09-04'
+method: probed
+source: >-
+  Anonymous HTTPS probes of the named RFC-registered /.well-known/ paths on every host this record
+  knows: the registrable domain and www for the current brand (legionintel.com — Yurts rebranded to
+  Legion Intelligence, Inc. and yurts.ai 301s there), the legacy yurts.ai marketing host, and the
+  api/auth/platform/docs hosts found in Certificate Transparency for legionintel.com.
+note: >-
+  ONE real document was served: an RFC 9116 security.txt, returned as text/plain from every
+  legionintel.com host (Cloudflare serves it at the zone level, so api., auth., platform. and docs.
+  all answer with the same 68-byte body). Everything else 404s. TWO hosts are 200-for-everything
+  catch-alls and their 200s are NOT documents: yurts.ai / www.yurts.ai return the 137KB Webflow
+  marketing page for every /.well-known/* path, and platform.legionintel.com returns its Next.js
+  sign-in shell for every unknown path (control probe /zzz-control-does-not-exist-9a8b also 307s to
+  /auth/signin). Those are recorded as misses. docs.legionintel.com is a broken origin (Cloudflare
+  525) whose plain-HTTP root 302s to https://drive.google.com/a/legionintel.com — an internal
+  Google Drive, not a developer docs site.
+hosts:
+- host: www.legionintel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: yurts-security.txt
+    content_type: text/plain; charset=utf-8
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: legionintel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    note: apex 404s; the served copy is on www and on the api/auth/platform hosts
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: api.legionintel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: yurts-security.txt
+    content_type: text/plain; charset=utf-8
+    note: same zone-level document as www
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: auth.legionintel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: yurts-security.txt
+    content_type: text/plain; charset=utf-8
+    note: same zone-level document as www
+  - path: /.well-known/openid-configuration
+    status: 404
+    note: >-
+      the host resolves and terminates TLS but returns a zero-byte 404 for every path including
+      the OpenID discovery document; no anonymous identity metadata is published
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/aauth-resource.json
+    status: 404
+- host: platform.legionintel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: yurts-security.txt
+    content_type: text/plain; charset=utf-8
+    note: same zone-level document as www
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/agent.json
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    note: NOT a document — Next.js sign-in HTML shell (catch-all); treated as a miss
+- host: docs.legionintel.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: yurts-security.txt
+    content_type: text/plain; charset=utf-8
+    note: same zone-level document as www
+  - path: /.well-known/openid-configuration
+    status: 525
+    note: Cloudflare 525 — origin TLS handshake fails; the host serves nothing
+  - path: /.well-known/oauth-authorization-server
+    status: 525
+  - path: /.well-known/oauth-protected-resource
+    status: 525
+  - path: /.well-known/api-catalog
+    status: 525
+  - path: /.well-known/ai-plugin.json
+    status: 525
+  - path: /.well-known/agent-card.json
+    status: 525
+  - path: /.well-known/agent.json
+    status: 525
+  - path: /.well-known/aauth-resource.json
+    status: 525
+- host: yurts.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: NOT a document — legacy Webflow marketing page returned for every path; miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/agent.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+- host: www.yurts.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: NOT a document — legacy Webflow marketing page returned for every path; miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/api-catalog
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/agent.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    note: NOT a document — Webflow catch-all HTML; miss
+summary:
+  hosts_probed: 8
+  documents_served: 1
+  served:
+  - security.txt
+  agent_card: not-served
+  api_catalog: not-served
+  oauth_metadata: not-served

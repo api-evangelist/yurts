@@ -1,0 +1,50 @@
+generated: '2026-09-04'
+method: probed
+source: >-
+  https://www.legionintel.com/llms.txt (vendor claim) plus live probes of api.legionintel.com,
+  platform.legionintel.com and www.legionintel.com
+status: claimed-not-publicly-reachable
+note: >-
+  Legion Intelligence (formerly Yurts) states in its own llms.txt that the platform "supports the
+  Model Context Protocol (MCP)". No publicly reachable MCP server was found, and no candidate tool
+  list could be derived either, because the provider publishes no OpenAPI to derive one from. This
+  file records the claim and the probes that failed to confirm it. No `type: MCPServer` pointer is
+  wired into apis.yml: that pointer asserts a reachable agent surface, and asserting one here would
+  credit the provider with an endpoint an agent cannot call.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: probed
+vendor_claim:
+  text: >-
+    "Underneath, Legion connects to 100+ systems (including IBM Maximo, SharePoint, Microsoft Teams,
+    ServiceNow, Jira, and Box), supports the Model Context Protocol (MCP), offers REST API
+    extensibility, and runs any model."
+  source: https://www.legionintel.com/llms.txt
+tools: []
+tools_note: >-
+  Not derived. There is no OpenAPI, GraphQL SDL or reachable tools/list manifest for this provider,
+  so any tool list here would be invented.
+probes:
+- url: https://api.legionintel.com/mcp
+  method: POST
+  body: '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+  status: 404
+  note: zero-byte body; the host 404s uniformly, control probe /zzz-control-9a8b also 404
+- url: https://platform.legionintel.com/mcp
+  method: POST
+  status: 307
+  redirect: https://platform.legionintel.com/auth/signin?callbackUrl=%2Fmcp
+  note: >-
+    NOT evidence of an MCP route — the control probe /zzz-control-does-not-exist-9a8b also 307s to
+    /auth/signin, so this app redirects every unknown path to sign-in
+- url: https://www.legionintel.com/mcp
+  method: POST
+  status: 405
+  note: openresty 405 Not Allowed on the marketing origin
+- url: https://mcp.legionintel.com/
+  status: NXDOMAIN
+  note: no such host in DNS or in Certificate Transparency for legionintel.com

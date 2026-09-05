@@ -1,0 +1,38 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  https://www.legionintel.com/sitemap.xml (87 URLs, no /pricing page) plus
+  https://www.legionintel.com/legion-packs, https://www.legionintel.com/centurion and
+  https://www.legionintel.com/llms.txt
+plan_count: 0
+currency: null
+note: >-
+  The provider publishes no pricing page and no plan tiers. Its own sitemap contains no /pricing or
+  /plans URL, and every product page routes to "Get Started" / "Get a Demo" contact forms. Legion
+  Intelligence (formerly Yurts) sells into US national security through government acquisition:
+  llms.txt states it is "awardable through the Department of War's Tradewinds Solutions Marketplace,
+  supports direct award and sole source paths, and is proposal-ready for integrator-delivered
+  programs", and that Centurion "is purchased as one contract: hardware, software, models, and
+  sustainment, with fixed pricing and a known BOM". No dollar figure, quota, overage or tier limit
+  is published anywhere on the public site. This is an honest zero, not an unchecked field.
+sales_motion: enterprise-contact-only
+procurement_paths:
+- name: DoW Tradewinds Solutions Marketplace
+  evidence: https://www.legionintel.com/llms.txt
+- name: direct award / sole source
+  evidence: https://www.legionintel.com/llms.txt
+- name: integrator-delivered programs
+  evidence: https://www.legionintel.com/llms.txt
+- name: Centurion single-contract purchase (hardware + software + models + sustainment)
+  evidence: https://www.legionintel.com/centurion
+plans: []
+evidence:
+- url: https://www.legionintel.com/sitemap.xml
+  status: 200
+  note: no /pricing or /plans entry among 87 URLs
+- url: https://www.legionintel.com/legion-packs
+  status: 200
+  note: no prices; CTA is "Get Started"
+- url: https://www.legionintel.com/centurion
+  status: 200
+  note: 'the page asserts "fixed pricing" but publishes no figure'

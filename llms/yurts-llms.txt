@@ -1,0 +1,188 @@
+# Legion Intelligence
+
+> Legion Intelligence builds governed agentic AI for national security. Legion deploys AI agents that carry out work across the systems teams already use: humans command, agents operate, and every action is attributed. Legion is delivered through Legion Packs, role-based capability bundles that put agents to work on day one, and extends to disconnected tactical environments through Centurion by Legion Intelligence. Legion runs in cloud, on-prem, air-gapped, classified (IL2 through IL6), and edge environments.
+
+**Legion Intelligence** ("Legion" after first mention) turns human intent into coordinated, governed action. Humans define objectives, constraints, and priorities; AI agents carry out the work across systems and data; governance enforces policy, provides full attribution, and keeps humans in command at every step. Legion Intelligence is led by co-founder and CEO Ben Van Roo.
+
+Legion is built for national security: the U.S. Department of War (DoW), the intelligence community, the U.S. Department of Energy, and public-sector-adjacent organizations. The same capability and governance extend to critical infrastructure and adjacent industries, including aerospace, manufacturing, maintenance, repair, and overhaul (MRO), energy, and pharmaceutical production.
+
+Tagline: **Command with Confidence**
+
+---
+
+## Product Hierarchy
+
+Three names cover everything Legion ships:
+
+- **Legion** is the secure, governed foundation that connects agents, models, data, and existing systems under human authority. Everything Legion ships runs on it.
+- **Legion Packs** are role-based capability bundles and the way Legion is purchased and used. Each Pack contains the agents, workflows, data connections, and governance required to perform a specific job.
+- **Centurion by Legion Intelligence** is Legion's deployable edge AI system for DDIL environments: hardware, software, and sustainment in one purchase. Same Packs, same governance, connected or disconnected.
+
+---
+
+## Legion Packs
+
+Legion Packs are role-based AI capability bundles that deliver outcomes out of the box. Each Pack deploys a ready Space with the Apps a team needs to start work immediately: no prompt engineering, no blank chat box, no months of integration.
+
+Four Featured Packs are available today:
+
+- **Commander Pack**: Shows leaders what needs a decision, what has changed, and what actions are underway. For commanders, senior enlisted advisors, executive officers, and battle captains.
+- **Intelligence Officer Pack**: Turns scattered reporting and operational data into faster intelligence products, threat context, and decision support. For J2/S2 intelligence officers and intel staff.
+- **Operations Officer Pack**: Enables operations teams to plan, coordinate, track, and update activity without rebuilding context every shift. For S3/J3 operations officers and staff sections.
+- **Maintenance Technician Pack**: Helps maintenance teams search technical manuals, create and schedule work orders, check parts, and reduce repair delays that affect readiness. For technicians, field techs, and maintenance supervisors.
+
+Packs start ready and extend without starting over. Custom Apps are built into a Pack in weeks for use cases unique to a mission, and new Packs deploy as new roles emerge.
+
+Learn more: https://www.legionintel.com/legion-packs
+
+---
+
+## Centurion by Legion Intelligence
+
+Centurion by Legion Intelligence is a deployable edge AI system integrating hardware, software, and sustainment for DDIL (denied, degraded, intermittent, limited connectivity) environments. Centurion runs the same Legion Packs and the same governance as cloud and on-prem deployments, from a single node to a coordinated mesh. Cloud connectivity is an accelerator when available, never a requirement for operation.
+
+Model routing is automatic. When connected, Centurion routes to the latest customer-approved frontier models. When degraded or disconnected, it shifts to the latest locally hosted open-weight models with no operator intervention, and updated models deploy to edge nodes with controlled rollout, so the edge never becomes a frozen AI island.
+
+Four deployment models (May 2026):
+
+- **Centurion III** (1 user): Intel-based laptop built on Intel Core Ultra Series 3 processors, for forward operators and small teams.
+- **Centurion V** (up to 2 users): NVIDIA DGX Spark, backpack-portable for small-team mobile deployment and forward operational bases.
+- **Centurion X** (up to 50 users): HPE Edgeline EL8000 with NVIDIA GPU, for vehicle-mounted or forward operating base use, with rugged case options tested to MIL-STD-810G and MIL-STD-461 and TAA-compliant configurations available.
+- **Centurion L** (up to 350 users): HPE ProLiant DL380a Gen12 with multi-NVIDIA GPU, for FOB datacenters, embassies, and air-gapped networks.
+
+Procurement is a single purchase: hardware, software, models, and support in one line item, with fixed pricing, a known BOM, and HBOM/SBOM documentation ready for accreditation. Solution delivery and ecosystem partners include Intel, HPE, Rancher Government Solutions, Google, and NVIDIA.
+
+Learn more: https://www.legionintel.com/centurion
+
+---
+
+## Key Pages
+
+- Platform: https://www.legionintel.com/platform (the secure, governed foundation beneath Legion Packs and Centurion)
+- Legion Packs: https://www.legionintel.com/legion-packs (role-based capability bundles that put agents to work on day one)
+- Centurion: https://www.legionintel.com/centurion (deployable edge AI system for DDIL environments)
+- Pricing: https://www.legionintel.com/pricing (how Legion is purchased)
+- Security & Privacy: https://www.legionintel.com/security (credentials, governance, and deployment environments)
+- Defense: https://www.legionintel.com/industries/defense (governed AI for every mission function, from intelligence to logistics)
+- Aerospace: https://www.legionintel.com/industries/aerospace (readiness across maintenance, parts, and supply workflows)
+- Manufacturing: https://www.legionintel.com/industries/manufacturing (connect ERP, MES, supply chain, and maintenance systems)
+- MRO: https://www.legionintel.com/industries/maintenance-repair-operations (diagnose faster, cut return trips, keep equipment ready)
+- Command Papers: https://www.legionintel.com/command-papers (technical doctrine series on operationalizing agentic AI in classified and contested environments)
+- Blog: https://www.legionintel.com/blog (deployment insights and product perspectives)
+- Case studies and resources: https://www.legionintel.com/resources (technical and operational references, case studies, webinars)
+- Press: https://www.legionintel.com/press-release (announcements and press coverage)
+- Company: https://www.legionintel.com/company (about Legion Intelligence)
+- Careers: https://www.legionintel.com/careers (open roles at Legion)
+- Contact: https://www.legionintel.com/contact (talk to the Legion team or request a demo)
+
+---
+
+## How Legion Works
+
+Customers interact with four things: Packs, Spaces, Apps, and Collections. A **Pack** is a role-based bundle that deploys a ready working environment. A **Space** is a structured environment where teams organize and carry out work, defining who has access, what context is available, and how work is coordinated. An **App** is an AI-powered tool that completes a specific task from start to finish (examples: SITREP Generator, Award Writer, Manual Assistant, Work Order Scheduler). A **Collection** is the governed knowledge layer that powers every result with permissions and provenance.
+
+Across every Pack, Legion agents search an organization's entire document ecosystem and trace every result back to source; answer questions in plain language with citations; draft emails, reports, and proposals grounded in organizational data, with human review before anything ships; and run no-code agentic workflows that carry multi-step work across systems end to end, with humans approving the steps that matter.
+
+Underneath, Legion connects to 100+ systems (including IBM Maximo, SharePoint, Microsoft Teams, ServiceNow, Jira, and Box), supports the Model Context Protocol (MCP), offers REST API extensibility, and runs any model: open-source, proprietary, or fine-tuned. New models are added through the Model hub without code changes.
+
+---
+
+## Why Teams Choose Legion
+
+- **Velocity**: Compress the distance between intent and action. Packs deploy ready capability on day one, and custom Apps ship in weeks, not quarters.
+- **Resiliency**: Built for the environments missions actually run in: cloud, on-prem, air-gapped, classified, edge. Any model, no vendor lock-in.
+- **Control**: Humans command. Agents do the work. Governance spans data, models, agents, and permissions, with full attribution and auditability.
+
+---
+
+## Security and Deployment
+
+Legion is FedRAMP High authorized (cloud platform), NIST 800-53 compliant, SOC 2 Type II certified, and CMMC Level 2, and is ready to manage ITAR-controlled data. Deployment is authorized from IL2 through IL6, including air-gapped networks. HIPAA and GDPR attestations are in place, and HBOM/SBOM documentation supports accreditation.
+
+Data sovereignty is enforced by design: customer data stays in the customer's environment and is never used to train models. Role-based and attribute-based access controls (RBAC and ABAC), approval workflows, guardrails, and audit logging govern every action, including agent actions, with full attribution showing what was done and on whose behalf.
+
+Deployment options: cloud, on-prem, hybrid, air-gapped, and edge (through Centurion).
+
+Learn more: https://www.legionintel.com/security
+
+---
+
+## Proven Results
+
+- 48x faster INTSUM generation and 15x faster target system analysis (Scarlet Dragon 26-01, XVIII Airborne Corps G2, on tactical SIPR at IL6)
+- 1-day field install to operational capability, with most users proficient within one hour (Scarlet Dragon 26-01)
+- 94% faster intelligence summary generation (Targeting Officer, U.S. Special Operations Command)
+- 216 hours saved per week automating repetitive manual workflows (Battalion Staff, U.S. Special Operations Command)
+- 88% reduction in SITREP processing time (8 hours to under 1 hour)
+- 25% increase in technician capacity (Manual Assistant, Amentum)
+- USSOCOM TE 26-02: Centurion ran Military Decision Making Process (MDMP) workflows on government-provided planning data in a disconnected environment, shifting automatically to locally hosted models when network access was unavailable
+- A U.S. Department of Energy national laboratory: 95% reduction in code development time (one week to a half day) and 6.5+ hours saved per task, generating documented, explained code for research validation over CUI and sensitive proprietary data
+- A U.S. Department of Energy national laboratory: source verification 12x faster (about two hours to minutes) and 80% less follow-on research, using RAG-grounded workflows that return real, cited research papers, scaling from 25 users toward 500
+
+The same platform proven by 20,000+ users across U.S. Special Operations Command.
+
+Case studies: https://www.legionintel.com/resources#case-studies
+
+---
+
+## Customers and Who Legion Serves
+
+Legion is deployed across the U.S. Department of War (DoW) and the U.S. Department of Energy. Named customers include the U.S. Army (XVIII Airborne Corps), the U.S. Air Force, the Missile Defense Agency, and the Defense Industrial Base.
+
+Typical buyers and operators include program managers, CIOs, CTOs, chief data officers, acquisition leaders, and mission operators: commanders, J1 through J4 directors, S2/J2 intelligence officers, S3/J3 operations officers, and maintenance leads. The same requirements extend to critical infrastructure operators (electric utilities, oil and gas, pharmaceutical production, and regulated manufacturing), who face the constraints Legion was built for: sensitive data that cannot leave the environment, operations that cannot depend on cloud connectivity, and AI that must stay governed, auditable, and under human authority.
+
+---
+
+## Frequently Asked Questions
+
+**Q: What is Legion Intelligence?**
+A: Legion Intelligence is a governed agentic AI company for national security. Legion deploys AI agents that carry out work across the systems teams already use, delivered through role-based Legion Packs. Humans command, agents operate, and every action is attributed. Legion runs in cloud, on-prem, air-gapped, classified (IL2 through IL6), and edge environments.
+
+**Q: What are Legion Packs?**
+A: Legion Packs are role-based AI capability bundles. Each Pack contains the agents, workflows, data connections, and governance required to perform a specific job. Customers deploy a Pack aligned to a role (Commander, Intelligence Officer, Operations Officer, Maintenance Technician) and start work immediately in a ready Space with the right Apps.
+
+**Q: Is Legion Intelligence a chatbot?**
+A: No. Chat assistants start at a prompt box and stop at an output; Legion Packs start from the work. Each Pack ships with Apps that connect to existing systems, carry multi-step jobs to completion under human approval, and produce outcomes such as intelligence summaries, work orders, and reports. The job is the unit of value, not the conversation.
+
+**Q: What is Centurion by Legion Intelligence?**
+A: Centurion by Legion Intelligence is a deployable edge AI system integrating hardware, software, and sustainment for DDIL environments. Centurion is Legion deployed as a portable, edge-native form factor: it runs the same Legion Packs and the same governance as every other Legion deployment, connected or disconnected, from a single node to a coordinated mesh.
+
+**Q: What does DDIL mean?**
+A: DDIL stands for denied, degraded, intermittent, and limited connectivity. DDIL describes operating environments where network access cannot be assumed. Centurion by Legion Intelligence is built for DDIL conditions: it runs Legion Packs on locally hosted models with no cloud dependency and synchronizes when connectivity returns and policy permits.
+
+**Q: Can Legion Intelligence run in classified or air-gapped environments?**
+A: Yes. Legion Intelligence is authorized from IL2 through IL6 and deploys in cloud, on-prem, hybrid, air-gapped, and edge environments. The same Packs run identically across all of them, including fully disconnected deployments through Centurion by Legion Intelligence.
+
+**Q: What security authorizations does Legion Intelligence hold?**
+A: Legion Intelligence is FedRAMP High authorized (cloud platform), NIST 800-53 compliant, SOC 2 Type II certified, and CMMC Level 2, and is ready to manage ITAR-controlled data. Deployment is authorized from IL2 through IL6. HIPAA and GDPR attestations are in place, and HBOM/SBOM documentation supports accreditation.
+
+**Q: Does Legion Intelligence train on customer data?**
+A: No. Customer data stays in the customer's environment and is never used to train models. With customer-approved cloud models, only the minimal data required to fulfill a request is sent; fully local deployments keep all processing inside the environment.
+
+**Q: How does Legion Intelligence keep humans in command?**
+A: Legion Intelligence runs every step under human direction or approval, based on policy the organization sets. Full attribution shows who did what, when, and on whose behalf, including for agent actions. Role-based permissions govern data, models, and agents, and audit logs are built in, not bolted on.
+
+**Q: How does Legion Intelligence keep outputs accurate and trustworthy?**
+A: Legion Intelligence treats accuracy as a governance problem, not a model problem. Agents work only from the authoritative data a team scopes for them and return answers with the citations and provenance to check them. Humans review at decision points before anything ships, and every action is logged and attributable, whichever model a customer runs.
+
+**Q: What AI models does Legion Intelligence support?**
+A: Legion Intelligence is model-agnostic and runs open-source, proprietary, fine-tuned, and government-furnished models. Connected deployments route to the latest customer-approved frontier models; disconnected deployments run locally hosted open-weight models. New models are added through the Model hub without code changes, so no Legion deployment depends on a single model vendor.
+
+**Q: How quickly can Legion Intelligence deploy?**
+A: Legion Intelligence deploys in weeks, not months. Packs arrive with ready capability aligned to the role on day one, and custom Apps are added in weeks as needs emerge. At Scarlet Dragon 26-01, Centurion installed in a single day. Actual timelines depend on data-access approvals and ATO scope in the customer's environment.
+
+**Q: How do government customers buy Legion Intelligence?**
+A: Legion Intelligence is built to move through government acquisition. Legion is awardable through the Department of War's Tradewinds Solutions Marketplace, supports direct award and sole source paths, and is proposal-ready for integrator-delivered programs. Centurion is purchased as one contract: hardware, software, models, and sustainment, with fixed pricing and a known BOM.
+
+**Q: How does Legion Intelligence support ATO and accreditation?**
+A: Legion Intelligence arrives pre-integrated and hardened rather than assembled on site. It deploys within IL2 through IL6, aligns to NIST 800-53, is FedRAMP High authorized in the cloud, and ships with HBOM/SBOM documentation established for accreditation. Authorization belongs to the customer's authorizing official; Legion changes the starting point so RMF and ATO become a review rather than a rebuild.
+
+**Q: Who uses Legion Intelligence?**
+A: Legion Intelligence is deployed across the U.S. Department of War and the U.S. Department of Energy. Named customers include the U.S. Army (XVIII Airborne Corps), the U.S. Air Force, the Missile Defense Agency, and the Defense Industrial Base, with additional deployments across national security and critical infrastructure organizations.
+
+**Q: What did Centurion demonstrate at Scarlet Dragon 26-01?**
+A: At Scarlet Dragon 26-01 (December 2025), the XVIII Airborne Corps G2 evaluated Centurion L on tactical SIPR at IL6, fully disconnected. Centurion installed in one day, most users were proficient within an hour, and the system supported up to 350 concurrent users. INTSUM generation dropped from about four hours to about five minutes, and target system analysis from about thirty minutes to about two. Full case study: https://www.legionintel.com/resources/centurion-scarlet-dragon-26-01
+
+---
+
+Contact: info@legionintel.com | LinkedIn: https://www.linkedin.com/company/legion-intel | X: https://x.com/legion_intel

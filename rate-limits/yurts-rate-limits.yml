@@ -1,0 +1,29 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  https://www.legionintel.com/llms.txt and https://www.legionintel.com/sitemap.xml — searched the
+  entire public site plus the api./platform./docs. hosts for a developer reference; none exists.
+limit_count: 0
+note: >-
+  No rate limits are published, because no public API documentation is published. Legion states in
+  its own llms.txt that the platform "offers REST API extensibility", but there is no developer
+  portal, API reference or machine-readable contract on any host we could reach:
+  api.legionintel.com returns a zero-byte 404 for every path including the control probe,
+  docs.legionintel.com is a broken origin (Cloudflare 525) whose plain-HTTP root 302s to an internal
+  https://drive.google.com/a/legionintel.com, and platform.legionintel.com redirects every unknown
+  path to /auth/signin. No X-RateLimit-*, RateLimit-* or Retry-After header could be observed
+  because there is no anonymous endpoint to call. An honest zero.
+limits: []
+headers: []
+exhaustion_status: null
+evidence:
+- url: https://api.legionintel.com/openapi.json
+  status: 404
+- url: https://api.legionintel.com/zzz-control-9a8b
+  status: 404
+  note: control probe — the host 404s uniformly with a zero-byte body
+- url: https://docs.legionintel.com/
+  status: 525
+- url: https://www.legionintel.com/llms.txt
+  status: 200
+  note: names REST API extensibility; publishes no limits

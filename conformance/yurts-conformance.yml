@@ -1,0 +1,96 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  https://www.legionintel.com/security and https://www.legionintel.com/llms.txt — the first-party
+  security/compliance page and llms.txt published by Legion Intelligence, Inc. (formerly Yurts).
+note: >-
+  There is no publicly published machine-readable contract for this provider (no OpenAPI, AsyncAPI,
+  GraphQL SDL, WSDL, .proto or reachable MCP manifest — see the STEP 0b probe record in
+  well-known/yurts-well-known.yml), so nothing here is derived from a spec. Every entry below is a
+  first-party CLAIM read off the provider's own public pages, with the exact page as evidence. The
+  regulatory/assurance regime for this company is US federal defense: FedRAMP, DoD Impact Levels,
+  CMMC and NIST 800-53, not an API-interoperability standard. No domain-standard signature could be
+  asserted, because a domain standard is read out of a contract and this provider publishes none —
+  domain_standard_conformance is reward-only and is correctly left unclaimed rather than invented.
+conformance:
+- id: soc2-type2
+  name: SOC 2 Type II
+  conforms: true
+  kind: third-party attestation
+  evidence: https://www.legionintel.com/security
+- id: soc1-type2
+  name: SOC 1 Type II
+  conforms: true
+  kind: third-party attestation
+  evidence: https://www.legionintel.com/security
+- id: fedramp-high
+  name: FedRAMP High
+  conforms: true
+  scope: cloud platform
+  kind: government authorization
+  evidence: https://www.legionintel.com/llms.txt
+- id: nist-800-53
+  name: NIST SP 800-53
+  conforms: true
+  kind: control framework alignment
+  evidence: https://www.legionintel.com/llms.txt
+- id: cmmc-level-2
+  name: CMMC Level 2
+  conforms: true
+  kind: government certification
+  evidence: https://www.legionintel.com/llms.txt
+- id: dod-impact-levels
+  name: DoD Impact Level IL2 through IL6
+  conforms: true
+  kind: deployment authorization range
+  evidence: https://www.legionintel.com/security
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  kind: attestation
+  evidence: https://www.legionintel.com/security
+- id: gdpr
+  name: GDPR
+  conforms: true
+  kind: attestation
+  evidence: https://www.legionintel.com/security
+- id: itar
+  name: ITAR
+  conforms: true
+  kind: readiness claim
+  note: stated as "ready to manage ITAR-controlled data", not as a registration
+  evidence: https://www.legionintel.com/llms.txt
+- id: sbom
+  name: SBOM / HBOM
+  conforms: true
+  kind: supply-chain documentation shipped for accreditation
+  evidence: https://www.legionintel.com/llms.txt
+- id: mcp
+  name: Model Context Protocol
+  conforms: false
+  kind: unverified vendor claim
+  note: >-
+    llms.txt states the platform "supports the Model Context Protocol (MCP)". No publicly reachable
+    MCP endpoint exists: api.legionintel.com/mcp returns a zero-byte 404, and
+    platform.legionintel.com/mcp 307s to /auth/signin exactly as a control probe of a nonsense path
+    does. No tools/list manifest could be retrieved, so conformance cannot be asserted.
+  evidence: https://www.legionintel.com/llms.txt
+- id: rfc9116
+  name: RFC 9116 security.txt
+  conforms: true
+  kind: served document
+  note: Contact + Expires only; no Policy, Encryption, Acknowledgments or Canonical field
+  evidence: https://www.legionintel.com/.well-known/security.txt
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  note: >-
+    auth.legionintel.com resolves and terminates TLS but returns a zero-byte 404 for
+    /.well-known/openid-configuration and /.well-known/oauth-authorization-server; no anonymous
+    authorization-server metadata is published.
+  evidence: https://auth.legionintel.com/.well-known/openid-configuration
+- id: rfc9457
+  name: RFC 9457 Problem Details
+  conforms: false
+  note: no published contract or error reference to read
+  evidence: https://www.legionintel.com/llms.txt

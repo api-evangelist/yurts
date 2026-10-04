@@ -30,7 +30,7 @@ modified: '2026-09-04'
 tags:
 - Company
 - Artificial Intelligence
-- Agentic AI
+- AI Agents
 - National Security
 - Defense
 - Generative AI
@@ -49,6 +49,7 @@ tags_raw:
 - retrieval-augmented-generation
 - edge-ai
 - government
+- Agentic AI
 apis: []
 maintainers:
 - FN: Kin Lane
